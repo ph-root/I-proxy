@@ -20,4 +20,4 @@ Usage : python3 I-proxy.py -f [file.txt] -t [type of proxies] -o [output folder]
                 python3 I-proxy.py -f proxies.txt -t socks5 -o out2
 
 
-![alt text](https://prnt.sc/1qzn2lp)
+![alt text](https://image.prntscr.com/image/ZUZiMyGHSjugUJslfs0XVQ.png)
