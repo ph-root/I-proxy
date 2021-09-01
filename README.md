@@ -23,3 +23,7 @@ Usage : python3 I-proxy.py -f [file.txt] -t [type of proxies] -o [output folder]
 # Windows
 
 ![alt text](https://image.prntscr.com/image/ZUZiMyGHSjugUJslfs0XVQ.png)
+
+# LINUX
+
+![alt text](https://image.prntscr.com/image/hzAJsP3CRGWsKyWoYhYsiA.png)
