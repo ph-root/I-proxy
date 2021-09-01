@@ -1,4 +1,4 @@
-import requests , sys , os
+import requests , sys , os , threading
 
 if len(sys.argv) != 7:
 	print('''Usage : python3 I-proxy.py -f [file.txt] -t [type of proxies] -o [output folder] 
@@ -63,9 +63,7 @@ class Proxy:
 				f.write(self.proxy + '\n')
 
 
-
-for prox in lista:
-
+def initia(prox):
 	proxy = Proxy(prox)
 
 	for typex in typee:
@@ -73,6 +71,18 @@ for prox in lista:
 	if proxy.valid_for:
 		print(f'[-] PROXY : {proxy.proxy} === [ {" | ".join(proxy.valid_for)} ]')
 
+threads = []
+for prox in lista:
+	thr = threading.Thread(target=initia , args=(prox,) )
+	threads.append(thr)
+	thr.start()
+	if len(threads) == 20:
+		for i in threads:
+			i.join()
+		threads = []
+
+	
+
 
 print('Finished!!')
-print('CODER : https://github.com/ph-root/')
+print('CODER : https://github.com/ph-root')
