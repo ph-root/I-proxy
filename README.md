@@ -10,7 +10,7 @@ git clone https://github.com/ph-root/I-proxy.git
 Usage : python3 I-proxy.py -f [file.txt] -t [type of proxies] -o [output folder]
 
                 help:
-                -f the PATH of file contain the proxies you want to check
+                -f the PATH of file contains the proxies you want to check
                 -t http,https,socks4,socks5 or ALL to check all types
                 -o name of folder to save the output in
 
